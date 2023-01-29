@@ -1,0 +1,26 @@
+/*.contenedor_contact{
+    width: 90%;
+    max-width: 1300px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 0px;
+    .contenido {
+        grid-row: 2/3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: auto;
+        display: flexbox;
+        border-radius: 7px;
+        padding: 20px;
+        background-color: #eef0f2;
+    }
+}*/
+img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    margin-top: 20px;
+}

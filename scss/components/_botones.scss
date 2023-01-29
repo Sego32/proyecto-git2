@@ -1,0 +1,19 @@
+.botones_animados {
+    display: inline-flex;
+    width: 150px;
+    height: 60px;
+    background-color: var(--color-secundario);
+    color: var(--color-icon);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.botones_animados:hover{
+    background-color: var(--color-icon);
+    color: #000000;
+}

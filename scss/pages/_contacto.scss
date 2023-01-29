@@ -1,0 +1,48 @@
+.formulario {
+    height: auto;
+    background-color: #1c1c1c;
+    width: auto;
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #eef;
+    }
+    .titulo_contact{
+        text-align: center;
+        color: #eef;
+        padding-top: 20px;
+    }
+    form{
+        height: 600px;
+        width: 500px;
+        margin: 20px auto;
+        padding-left: 50px;
+        input{
+            width: 400px;
+            height: 70px;
+            text-align: center;
+            padding: 0px 10px;
+            margin: 10px;
+            font-size: 18px;
+        }
+        textarea{
+            font-size: 18px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+        }
+        button{
+            margin: 20px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+}
