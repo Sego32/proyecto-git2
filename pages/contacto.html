@@ -2,69 +2,73 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/f426ef07f0.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto:wght@900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>proyectocoder</title>
 </head>
 
 <body>
-
-    <body>
-        <header>
-            <nav class="navbar">
-                <div>
-                    <button class="boton_logo"><i class="fa-solid fa-graduation-cap"></i></button>
-                </div>
-                <div class="navbar_sections">
-                    <a href="../index.html">Inicio</a>
-                    <a href="./categorias.html">Categorías</a>
-                    <a href="./contacto.html">Contacto</a>
-                    <a href="./nosotros.html">Nosotros</a>
-                    <a href="./servicios.html">Servicios</a>
-                </div>
-            </nav>
-            <section class="portada">¿Te quiéres comunicar?</section>
-        </header>
-            <div class="formulario">
-                <h1 class="titulo_contact">Contacto</h1>
-                <form action="">
-                    <input type="text" placeholder="Ingrese su nombre">
-                    <input type="text" placeholder="Ingrese su mail">
-                    <textarea name="Comentario" id="" cols="50" rows="10" placeholder="Deja un comentario"></textarea>
-                    <div class="boton_position">
-                    <button class="botones_animados" type="submit">Enviar</button>
-                </div>
-                </form>
-                <h2>Encuentranos en esta direccion</h2>
-                <section class="mapa">
-                <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99303.8348958498!2d-68.1154008!3d-38.9412346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ba35eb8e35%3A0x6220acb810e3e2f5!2zTmV1cXXDqW4!5e0!3m2!1ses-419!2sar!4v1669980284044!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </section>
+    <header>
+        <nav class="navbar">
+            <div>
+                <button class="boton_logo d-none d-xl-block"><i class="fa-solid fa-graduation-cap"></i></button>
             </div>
-        <footer>
-            <div class="ul_botones">
-                <ul>
-                    <li>
-                        <h4>Contacto:</h4>
-                    </li>
-                    <li>Academia23@gmail.com</li>
-                    <li>Av. Paseo Colón 100, C1064 CABA</li>
-                </ul>
-                <ul>
-                    <button class="botones_animados_footer"><i class="fa-brands fa-instagram"></i></button>
-                    <button class="botones_animados_footer"><i class="fa-brands fa-twitter"></i></button>
-                    <button class="botones_animados_footer"><i class="fa-brands fa-facebook"></i></button>
-                </ul>
+            <div class="navbar_sections">
+                <a href="../index.html">Inicio</a>
+                <a href="./categorias.html">Categorías</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./servicios.html">Servicios</a>
             </div>
-        </footer>
-    </body>
+        </nav>
+        <section class="portada d-none d-md-block">
+            <div class="titulos_principales">¿Te quiéres comunicar?</div>
+        </section>
+    </header>
+    <div class="formulario">
+        <h1 class="titulo_contact">Contacto</h1>
+        <form action="">
+            <input type="text" placeholder="Ingrese su nombre">
+            <input type="text" placeholder="Ingrese su mail">
+            <textarea name="Comentario" id="" cols="50" rows="10" placeholder="Deja un comentario"></textarea>
+            <div class="boton_position">
+                <button class="botones_animados" type="submit">Enviar</button>
+            </div>
+        </form>
+        <h2>Encuentranos en esta direccion</h2>
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99303.8348958498!2d-68.1154008!3d-38.9412346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ba35eb8e35%3A0x6220acb810e3e2f5!2zTmV1cXXDqW4!5e0!3m2!1ses-419!2sar!4v1669980284044!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <footer>
+        <div class="ul_botones">
+            <ul>
+                <li>
+                    <h4>Contacto:</h4>
+                </li>
+                <li>Academia23@gmail.com</li>
+                <li>Av. Paseo Colón 100, C1064 CABA</li>
+            </ul>
+            <ul>
+                <button class="botones_animados_footer"><i class="fa-brands fa-instagram"></i></button>
+                <button class="botones_animados_footer"><i class="fa-brands fa-twitter"></i></button>
+                <button class="botones_animados_footer"><i class="fa-brands fa-facebook"></i></button>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
