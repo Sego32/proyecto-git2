@@ -1,7 +1,16 @@
 img{
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: 400px;
+    display: flex;
+    align-items: center;
+    height: 420px;
     margin-top: 20px;
+    width: 100%;
+    object-fit: cover;
+    .img_principal{
+    display: block;
+    height: 420px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
 }
