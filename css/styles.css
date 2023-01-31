@@ -313,20 +313,24 @@ header .navbar {
   background: var(--color-primario);
   position: sticky;
   top: 0;
+  opacity: 0.9;
   display: flex;
   justify-content: space-between;
-  opacity: 0.9;
+  padding: 0px;
+  height: 70px;
 }
 header .navbar a {
   color: rgb(255, 255, 255);
-  display: inline-block;
   padding: 20px;
-  width: 100%;
-  text-align: center;
+  margin-right: 30px;
   color: var(--color-title);
   transition: 0.3s ease-out all;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 23px;
+}
+header .navbar ul {
+  display: flex;
+  margin: 0;
 }
 header .navbar a:hover {
   color: #d15858;
@@ -336,28 +340,38 @@ header .navbar .boton_logo {
   display: flex;
   background-color: var(--color-primario);
   color: var(--color-icon);
-  font-size: 45px;
-  cursor: pointer;
+  font-size: 40px;
   border: none;
-  transition: 0.3s ease all;
-  height: auto;
-  margin: 8px;
-  margin-left: 20px;
+  padding: 0px 50px;
 }
-header .navbar ul {
-  list-style: none;
+header .navbar .desplegable {
+  margin-right: 30px;
+  font-size: 35px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 6px;
+  left: 0;
+  display: block;
 }
-header .navbar_sections {
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+header .navbar .desplegable ul {
+  display: none;
+}
+header .navbar .desplegable:hover {
+  color: #d15858;
+  background-color: #000000;
+}
+header .navbar .desplegable:hover .desplegable_ul {
+  display: block;
+  width: 100vw;
+}
+header .navbar .desplegable:hover .desplegable_ul li {
+  margin: 30px;
 }
 header .portada {
   background-image: url(../imagenes/fondo2.jpg);
   background-size: cover;
   font-size: 100px;
+  width: 100vw;
   color: var(--color-title);
   font-weight: 900;
   text-align: center;
@@ -372,7 +386,6 @@ body {
   color: var(--color-texto);
   position: relative;
   padding-bottom: 118px;
-  width: 100%;
 }
 
 ul {
@@ -398,6 +411,7 @@ ul a:hover {
   grid-template-columns: auto 20%;
   grid-template-rows: repeat(3, auto);
   margin-bottom: 0px;
+  width: 100vw;
 }
 .contenedor main .parrafo_main {
   margin: 60px;
@@ -410,7 +424,7 @@ ul a:hover {
   grid-row: 2/3;
   display: flexbox;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 20px;
   background-color: #eef0f2;
 }
@@ -455,11 +469,12 @@ footer ul {
 @media (max-width: 992px) {
   .contenido {
     grid-column: span 3;
+    border-radius: 0;
   }
   .contenedor {
     max-width: 1300px;
-    margin: 10px auto;
     display: grid;
+    margin: 0;
     grid-gap: 10px;
     grid-template-columns: auto 20%;
     grid-template-rows: repeat(3, auto);
@@ -468,6 +483,19 @@ footer ul {
   .contenedor main .parrafo_main {
     font-size: 16px;
     color: var(--color-primario);
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    background: var(--color-primario);
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    height: 50px;
+    width: 100vw;
   }
 }
 
