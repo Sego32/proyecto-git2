@@ -5,17 +5,17 @@ html {
     .sidebar {
         padding: 20px;
         grid-row: 2/3;
-        background-color: #ecebe4;
+        background-color: #eef0f2;
         height: 60vh;
         position: sticky;
         display: flex;
         top: 10px;
         border-radius: 7px;
         flex-direction: column;
-        box-shadow: 0px 0px 10px var(--color-navbar);
+        box-shadow: 0px 0px 5px #505050;
         .boton_aside {
-            background-color: #ecebe4;
-            color: var(--color-secundario);
+            background-color: #eef0f2;
+            color: var(--color-primario);
             font-size: 50px;
             border: none;
             cursor: pointer;
@@ -51,6 +51,7 @@ aside {
         margin-bottom: 10px;
         display: flex;
         justify-content: center;
+        color: var(--color-primario);
     }
 
     .lista_aside li {
@@ -62,7 +63,7 @@ aside {
             display: block;
             height: 12px;
             width: 12px;
-            background-color: #daddd8;
+            background-color: var(--color-primario);
             transform: rotate(45deg);
             position: absolute;
             left: -19px;
@@ -71,7 +72,7 @@ aside {
 
         a {
             display: block;
-            color: var(--color-texto);
+            color: var(--color-primario);
             padding: 15px 10px;
             text-decoration: none;
 
