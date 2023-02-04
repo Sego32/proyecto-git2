@@ -12,7 +12,7 @@ html {
         top: 10px;
         border-radius: 7px;
         flex-direction: column;
-        box-shadow: 0px 0px 5px #505050;
+        box-shadow: 0px 0px 5px #979797;
         .boton_aside {
             background-color: #eef0f2;
             color: var(--color-primario);
@@ -39,6 +39,7 @@ aside {
 
     .contenedor_temario {
         padding-top: 20px;
+        margin-bottom: 90px;
     }
 
     .lista_aside {

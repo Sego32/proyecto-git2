@@ -16,7 +16,7 @@
         width: auto;
         max-height: 600px;
         max-width: 500px;
-        margin: 20px auto;
+        margin: 10px auto;
         padding-left: 50px;
         input{
             width: 400px;
@@ -47,14 +47,17 @@
     padding-left: 100px;
 }
 @media (max-width: 992px){
+        
         .formulario{
+            background-color: var(--color-primario);
             padding: 0;
-            background-color: rgb(219, 143, 143);
             form{
                 padding-left: 0;
-                textarea{
+                input{
                     margin: 0;
-                    padding: 0;
+                }
+                textarea{
+                    width: 100vw;
                 }
             }
             section{

@@ -8,6 +8,7 @@
 @import "./pages/nosotros.scss";
 
 header {
+    background-color: #000000;
     .navbar {
         background: var(--color-primario);
         position: sticky;
@@ -179,6 +180,7 @@ body {
         grid-column: span 3;
         border-radius: 0;
 }
+
 .contenedor{
     max-width: 1300px;
     display: grid;
@@ -190,6 +192,7 @@ body {
     main .parrafo_main{
         font-size: 16px;
         color: var(--color-primario);
+        margin: 40px;
     }
 }
 }
