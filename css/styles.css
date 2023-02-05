@@ -369,7 +369,6 @@ header .portada {
   background-image: url(../imagenes/fondo2.jpg);
   background-size: cover;
   font-size: 100px;
-  width: 100vw;
   color: var(--color-title);
   font-weight: 900;
   text-align: center;
@@ -433,6 +432,7 @@ footer {
   position: absolute;
   width: 100%;
   bottom: 0;
+  overflow-x: hidden;
 }
 footer .botones_animados_footer {
   display: inline-flex;
@@ -482,6 +482,13 @@ footer ul {
     font-size: 16px;
     color: var(--color-primario);
     margin: 40px;
+  }
+  .ul_botones {
+    padding: 10px;
+  }
+  .ul_botones .botones_animados_footer {
+    width: 40px;
+    height: 20px;
   }
 }
 

@@ -9,15 +9,17 @@
 
 header {
     background-color: #000000;
+
     .navbar {
         background: var(--color-primario);
         position: sticky;
         top: 0;
         opacity: 0.9;
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 0px;
         height: 70px;
+
         a {
             color: rgb(255, 255, 255);
             padding: 20px;
@@ -27,7 +29,8 @@ header {
             text-decoration: none;
             font-size: 23px;
         }
-        ul{
+
+        ul {
             display: flex;
             margin: 0;
         }
@@ -46,7 +49,7 @@ header {
             padding: 0px 50px;
         }
 
-        .desplegable{
+        .desplegable {
             margin-right: 30px;
             font-size: 35px;
             color: #ffffff;
@@ -54,33 +57,39 @@ header {
             margin: 6px;
             left: 0;
             display: block;
-            ul{
+
+            ul {
                 display: none;
             }
-            &:hover{
+
+            &:hover {
                 color: #d15858;
                 background-color: #000000;
-                .desplegable_ul{
+
+                .desplegable_ul {
                     display: block;
                     width: 100vw;
-                    li{
+
+                    li {
                         margin: 30px;
                     }
                 }
             }
         }
     }
+
     .portada {
         background-image: url(../imagenes/fondo2.jpg);
-        background-size:cover;
+        background-size: cover;
         font-size: 100px;
-        width: 100vw;
         color: var(--color-title);
         font-weight: 900;
-        text-align: center;}
-        .titulos_principales{
-            padding: 10%;
-        }
+        text-align: center;
+    }
+
+    .titulos_principales {
+        padding: 10%;
+    }
 }
 
 body {
@@ -89,110 +98,125 @@ body {
     color: var(--color-texto);
     position: relative;
     padding-bottom: 118px;
-    }
-    ul{
-        list-style: none;
-        margin: 30px;
-        li{
-            text-align: left;
-        }
-        a{
-            text-decoration: none;
-            color: var(--color-secundario);
-            &:hover{
-                color: #d15858;
-            }
-        }
-    }
-
-    .contenedor {
-        max-width: 1300px;
-        margin: 10px auto;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: auto 20%;
-        grid-template-rows: repeat(3, auto);
-        margin-bottom: 0px;
-        width: 100vw;
-        main {
-            .parrafo_main {
-                margin: 60px;
-            }
-
-            .titulo_contenido {
-                margin-top: 20px;
-                text-align: center;
-            }
-        }
-
-        .contenido {
-            grid-row: 2/3;
-            display: flexbox;
-            justify-content: center;
-            border-radius: 5px;
-            padding: 20px;
-            background-color: #eef0f2;
-        }
-    }
-
-    footer {
-        background-color: var(--color-primario);
-        color: #555555;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        .botones_animados_footer {
-            display: inline-flex;
-            width: 80px;
-            height: 50px;
-            background-color: var(--color-primario);
-            color: var(--color-icon);
-            font-size: 30px;
-            margin: 10px;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            border: none;
-            cursor: pointer;
-            transition: 0.3s ease all;
-            border-radius: 5px;
-
-            &:hover {
-                background-color: #000000;
-                color: #ffffff;
-            }
-        }
-
-        .ul_botones {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        ul {
-            list-style: none;
-            margin: 12px;
-        }
-    }
-
-@media (max-width: 992px){
-    .contenido {
-        grid-column: span 3;
-        border-radius: 0;
 }
 
-.contenedor{
+ul {
+    list-style: none;
+    margin: 30px;
+
+    li {
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-secundario);
+
+        &:hover {
+            color: #d15858;
+        }
+    }
+}
+
+.contenedor {
     max-width: 1300px;
+    margin: 10px auto;
     display: grid;
-    margin: 0;
     grid-gap: 10px;
     grid-template-columns: auto 20%;
     grid-template-rows: repeat(3, auto);
     margin-bottom: 0px;
-    main .parrafo_main{
-        font-size: 16px;
-        color: var(--color-primario);
-        margin: 40px;
+    width: 100vw;
+
+    main {
+        .parrafo_main {
+            margin: 60px;
+        }
+
+        .titulo_contenido {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    .contenido {
+        grid-row: 2/3;
+        display: flexbox;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #eef0f2;
     }
 }
+
+footer {
+    background-color: var(--color-primario);
+    color: #555555;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow-x: hidden;
+
+    .botones_animados_footer {
+        display: inline-flex;
+        width: 80px;
+        height: 50px;
+        background-color: var(--color-primario);
+        color: var(--color-icon);
+        font-size: 30px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease all;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    }
+
+    .ul_botones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contenido {
+        grid-column: span 3;
+        border-radius: 0;
+    }
+
+    .contenedor {
+        max-width: 1300px;
+        display: grid;
+        margin: 0;
+        grid-gap: 10px;
+        grid-template-columns: auto 20%;
+        grid-template-rows: repeat(3, auto);
+        margin-bottom: 0px;
+
+        main .parrafo_main {
+            font-size: 16px;
+            color: var(--color-primario);
+            margin: 40px;
+        }
+    }
+    .ul_botones{
+        padding: 10px;
+        .botones_animados_footer{
+            width: 40px;
+            height: 20px;
+        }
+    }
 }
