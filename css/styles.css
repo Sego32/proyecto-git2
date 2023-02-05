@@ -7,6 +7,7 @@
   --color-title: #daddd8;
   --color-icon: #daddd8;
   --bs-body-bg: #dcdcdd;
+  --color-hovers: #d15858;
 }
 
 * {
@@ -71,7 +72,7 @@ html {
   border-radius: 5px;
 }
 .contenedor .sidebar .boton_aside:hover {
-  color: #d15858;
+  color: var(--color-hovers);
 }
 
 aside {
@@ -119,7 +120,13 @@ aside .lista_aside li a {
   text-decoration: none;
 }
 aside .lista_aside li a:hover {
-  color: #d15858;
+  color: var(--color-hovers);
+}
+
+.titulo_servicios {
+  display: flex;
+  justify-content: center;
+  color: #eeefee;
 }
 
 .servicios_main {
@@ -129,7 +136,6 @@ aside .lista_aside li a:hover {
 }
 .servicios_main section {
   max-height: 600px;
-  width: 405px;
   background-color: rgb(238, 238, 238);
   display: flex;
   justify-content: space-between;
@@ -137,6 +143,7 @@ aside .lista_aside li a:hover {
   align-items: center;
   box-shadow: 0px 0px 10px rgb(179, 179, 179);
   max-width: 500px;
+  min-width: 371px;
   margin: 20px 0px 20px 10px;
   padding-bottom: 5px;
 }
@@ -326,13 +333,13 @@ header .navbar a {
   text-decoration: none;
   font-size: 23px;
 }
+header .navbar a:hover {
+  color: var(--color-hovers);
+  text-decoration: none;
+}
 header .navbar ul {
   display: flex;
   margin: 0;
-}
-header .navbar a:hover {
-  color: #d15858;
-  text-decoration: none;
 }
 header .navbar .boton_logo {
   display: flex;
@@ -355,7 +362,7 @@ header .navbar .desplegable ul {
   display: none;
 }
 header .navbar .desplegable:hover {
-  color: #d15858;
+  color: var(--color-hovers);
   background-color: #000000;
 }
 header .navbar .desplegable:hover .desplegable_ul {
@@ -397,7 +404,7 @@ ul a {
   color: var(--color-secundario);
 }
 ul a:hover {
-  color: #d15858;
+  color: var(--color-hovers);
 }
 
 .contenedor {

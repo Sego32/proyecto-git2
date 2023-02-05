@@ -28,16 +28,15 @@ header {
             transition: 0.3s ease-out all;
             text-decoration: none;
             font-size: 23px;
+            &:hover {
+                color: var(--color-hovers);
+                text-decoration: none;
+            }
         }
 
         ul {
             display: flex;
             margin: 0;
-        }
-
-        a:hover {
-            color: #d15858;
-            text-decoration: none;
         }
 
         .boton_logo {
@@ -63,7 +62,7 @@ header {
             }
 
             &:hover {
-                color: #d15858;
+                color: var(--color-hovers);
                 background-color: #000000;
 
                 .desplegable_ul {
@@ -113,7 +112,7 @@ ul {
         color: var(--color-secundario);
 
         &:hover {
-            color: #d15858;
+            color: var(--color-hovers);
         }
     }
 }

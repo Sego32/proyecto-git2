@@ -22,7 +22,7 @@ html {
             transition: 0.3s ease all;
             border-radius: 5px;
             &:hover{
-                color: #d15858;
+                color: var(--color-hovers);
             }
         }
     }
@@ -78,7 +78,7 @@ aside {
             text-decoration: none;
 
             &:hover {
-                color: #d15858;
+                color: var(--color-hovers);
             }
         }
     }
