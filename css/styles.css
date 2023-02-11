@@ -373,7 +373,7 @@ header .navbar .desplegable:hover .desplegable_ul li {
   margin: 30px;
 }
 header .portada {
-  background-image: url(../imagenes/fondo2.jpg);
+  background-image: url(../imagenes/portada1.jpg);
   background-size: cover;
   font-size: 100px;
   color: var(--color-title);
